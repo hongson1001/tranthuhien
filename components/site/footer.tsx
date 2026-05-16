@@ -16,8 +16,8 @@ export function SiteFooter() {
     <footer className="relative mt-32 border-t border-black/5 bg-cinema-surface">
       <div className="absolute inset-x-0 -top-px mx-auto h-px max-w-7xl bg-linear-to-r from-transparent via-cinema-gold/50 to-transparent" />
 
-      <div className="mx-auto grid w-full max-w-7xl gap-12 px-6 py-20 sm:px-8 md:grid-cols-3">
-        <div className="space-y-4">
+      <div className="mx-auto grid w-full max-w-7xl gap-12 px-6 py-20 text-center sm:px-8 md:grid-cols-3 md:text-left">
+        <div className="flex flex-col items-center space-y-4 md:items-start">
           <div className="flex items-center gap-3">
             <span className="relative h-10 w-10 overflow-hidden rounded-full ring-1 ring-cinema-gold/40">
               <Image
@@ -38,7 +38,7 @@ export function SiteFooter() {
           <p className="text-xs text-cinema-faint">{SITE.location}</p>
         </div>
 
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <h3 className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-cinema-faint">
             Điều hướng
           </h3>
@@ -56,14 +56,14 @@ export function SiteFooter() {
           </ul>
         </div>
 
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <h3 className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-cinema-faint">
             Liên hệ
           </h3>
           <div className="space-y-3">
             <a
               href={`mailto:${SITE.email}`}
-              className="group flex items-center gap-2 text-sm text-foreground transition-colors hover:text-cinema-gold"
+              className="group inline-flex items-center gap-2 text-sm text-foreground transition-colors hover:text-cinema-gold"
             >
               <Mail size={16} className="opacity-70" />
               <span className="border-b border-dashed border-black/20 group-hover:border-cinema-gold/60">
@@ -72,7 +72,7 @@ export function SiteFooter() {
             </a>
             <a
               href={`tel:${SITE.phone.replace(/\s+/g, "")}`}
-              className="group flex items-center gap-2 text-sm text-foreground transition-colors hover:text-cinema-gold"
+              className="group inline-flex items-center gap-2 text-sm text-foreground transition-colors hover:text-cinema-gold"
             >
               <Phone size={16} className="opacity-70" />
               <span className="border-b border-dashed border-black/20 group-hover:border-cinema-gold/60">
@@ -80,7 +80,7 @@ export function SiteFooter() {
               </span>
             </a>
           </div>
-          <div className="mt-6 flex items-center gap-2">
+          <div className="mt-6 flex items-center justify-center gap-2 md:justify-start">
             {socials.map(({ href, label, icon: Icon }) => (
               <a
                 key={label}
@@ -98,7 +98,7 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-black/5">
-        <div className="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-2 px-6 py-6 text-xs text-cinema-faint sm:flex-row sm:items-center sm:px-8">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-center text-xs text-cinema-faint sm:px-8 md:flex-row md:items-center md:text-left">
           <p>© {year} {SITE.name}. Bảo lưu mọi quyền.</p>
         </div>
       </div>
