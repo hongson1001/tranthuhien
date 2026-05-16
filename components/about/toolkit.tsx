@@ -28,7 +28,7 @@ export function Toolkit() {
       title="Toolkit cá nhân."
       description="Phần mềm & thiết bị sử dụng thường xuyên cho cả khâu quay lẫn hậu kỳ."
     >
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {groups.map((g) => (
           <div
             key={g.label}

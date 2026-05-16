@@ -21,7 +21,7 @@ export function Section({
     <section
       {...rest}
       className={clsx(
-        "relative mx-auto w-full max-w-7xl px-6 py-24 sm:px-8 lg:py-32",
+        "relative mx-auto w-full max-w-7xl px-5 py-16 sm:px-6 sm:py-20 md:px-8 lg:py-28",
         className,
       )}
     >

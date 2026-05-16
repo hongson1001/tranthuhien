@@ -34,7 +34,7 @@ export function Hero() {
               Đang nhận dự án toàn quốc · Làm việc tại Hà Nội
             </div>
 
-            <h1 className="mt-6 font-display text-6xl leading-[1.05] text-foreground sm:text-7xl md:text-8xl lg:text-[8.5rem]">
+            <h1 className="mt-6 font-display text-5xl leading-[1.05] text-foreground sm:text-7xl md:text-8xl lg:text-[8.5rem]">
               {headingWords.map((word, i) => (
                 <motion.span
                   key={`${word}-${i}`}
@@ -91,16 +91,16 @@ export function Hero() {
 
         <div className="mt-14 grid grid-cols-3 gap-4 border-t border-black/10 pt-8 sm:gap-8">
           {stats.map((s) => (
-            <div key={s.label}>
-              <div className="font-display text-3xl text-foreground sm:text-5xl">
+            <div key={s.label} className="min-w-0">
+              <div className="font-display text-2xl leading-tight text-foreground sm:text-4xl lg:text-5xl">
                 {s.approximate && (
-                  <span className="mr-2 align-baseline font-sans text-sm font-normal italic text-cinema-faint sm:text-base">
+                  <span className="mr-1.5 align-baseline font-sans text-[10px] font-normal italic text-cinema-faint sm:mr-2 sm:text-base">
                     Khoảng
                   </span>
                 )}
                 {s.value}
               </div>
-              <div className="mt-1 text-xs uppercase tracking-[0.18em] text-cinema-faint sm:text-sm">
+              <div className="mt-1 text-[10px] uppercase tracking-[0.16em] text-cinema-faint sm:text-xs sm:tracking-[0.18em] lg:text-sm">
                 {s.label}
               </div>
             </div>

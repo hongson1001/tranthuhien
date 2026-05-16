@@ -43,7 +43,7 @@ export function Services() {
       title="Ba mảng làm trọn — từ máy quay tới khung hình cuối."
       description="Không chỉ ngồi cắt từ footage có sẵn. Mình có thể nhận trọn gói quay & dựng, hoặc tham gia từng khâu tuỳ scope dự án."
     >
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {services.map((service, i) => (
           <motion.article
             key={service.title}

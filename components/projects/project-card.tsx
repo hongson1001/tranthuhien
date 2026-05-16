@@ -123,8 +123,8 @@ export function ProjectCard({
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-6 border-t border-black/5 px-6 py-5">
-          <p className="text-sm text-muted line-clamp-2">
+        <div className="flex flex-col items-start gap-4 border-t border-black/5 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6">
+          <p className="min-w-0 flex-1 text-sm text-muted line-clamp-2">
             {project.description}
           </p>
           {project.metrics && project.metrics.length > 0 && (
