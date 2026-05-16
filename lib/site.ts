@@ -1,0 +1,39 @@
+export const SITE = {
+  name: "Trần Thu Hiền",
+  shortName: "Thu Hiền",
+  role: "Quay · Dựng · Motion",
+  tagline: "Kể chuyện bằng nhịp cắt, sắc màu và chuyển động.",
+  bio: "Hiện công tác tại Hà Nội. Trực tiếp quay & dựng video TikTok, YouTube và đồ hoạ chuyển động cho thương hiệu.",
+  location: "Hà Nội, Việt Nam",
+  email: "hienthutran0602@gmail.com",
+  phone: "0826224968",
+  url: "https://www.facebook.com/tran.thu.hien.768895",
+  avatar: "/avatar/avatar.jpg",
+  ogImage: "/avatar/avatar.jpg",
+  locale: "vi_VN",
+  yearsExperience: 3,
+  keywords: [
+    "video editor",
+    "editor video chuyên nghiệp",
+    "motion designer Việt Nam",
+    "Trần Thu Hiền video editor",
+    "thuê video editor freelance",
+    "dựng video cửa hàng cầu lông",
+    "video editor ngành cầu lông",
+    "review vợt cầu lông",
+    "video editor TikTok cầu lông",
+  ],
+  social: {
+    facebook: "https://www.facebook.com/tran.thu.hien.768895",
+    instagram: "https://www.instagram.com/hienthutran0602/",
+  },
+  nav: [
+    { label: "Trang chủ", href: "/" },
+    { label: "TikTok", href: "/tiktok" },
+    { label: "YouTube", href: "/youtube" },
+    { label: "Giới thiệu", href: "/about" },
+    { label: "Liên hệ", href: "/contact" },
+  ],
+} as const;
+
+export type SiteConfig = typeof SITE;
