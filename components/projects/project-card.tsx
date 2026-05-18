@@ -47,22 +47,19 @@ export function ProjectCard({
         <div className="relative aspect-4/3 overflow-hidden">
           {project.assetType === "logo" ? (
             <>
-              <Image
-                src={project.thumbnail}
-                alt=""
-                aria-hidden
-                fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                className="scale-150 object-cover opacity-70 blur-3xl"
+              <div
+                className="absolute inset-0"
+                style={{ backgroundColor: project.brandColor ?? "#1a1a1a" }}
               />
-              <div className="absolute inset-0 bg-black/25" />
-              <div className="relative grid h-full w-full place-items-center p-10 sm:p-14">
-                <div className="relative aspect-square w-3/5 max-w-[200px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.35)] transition-transform duration-700 ease-out group-hover:scale-105">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(255,255,255,0.22),transparent_55%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_40%,rgba(0,0,0,0.55))]" />
+              <div className="relative grid h-full w-full place-items-center p-8 sm:p-10">
+                <div className="relative aspect-square w-2/3 max-w-[280px] drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] transition-transform duration-700 ease-out group-hover:scale-105">
                   <Image
                     src={project.thumbnail}
                     alt={`${project.title} — ${project.client} ${platformLabel[project.platform]} logo`}
                     fill
-                    sizes="200px"
+                    sizes="280px"
                     className="object-contain"
                     priority={priority}
                   />

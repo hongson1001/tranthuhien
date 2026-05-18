@@ -11,8 +11,10 @@ export type Project = {
   year: number;
   role: string;
   thumbnail: string;
-  /** "logo" = avatar brand (resolution thấp, render object-contain + blur backdrop). "photo" = ảnh chụp (full bleed). */
+  /** "logo" = avatar brand (resolution thấp, render object-contain + brand color backdrop). "photo" = ảnh chụp (full bleed). */
   assetType: AssetType;
+  /** Màu chủ đạo của brand — dùng làm background cho card logo. */
+  brandColor?: string;
   description: string;
   metrics?: { label: string; value: string }[];
   href: string;
@@ -32,6 +34,7 @@ export const ALL_PROJECTS: Project[] = [
     role: "Dựng phim",
     thumbnail: "/tiktok/kimnganphuc.jpeg",
     assetType: "logo",
+    brandColor: "#4a0a0a",
     description:
       "TikTok thương hiệu vàng bạc đá quý KDJ Kim Ngân Phúc — showcase trang sức cao cấp, story sản phẩm và chuỗi review viral, lượng view top trong các kênh đang hợp tác.",
     href: "https://www.tiktok.com/@kdj.kim.ngan.phuc",
@@ -62,6 +65,7 @@ export const ALL_PROJECTS: Project[] = [
     role: "Dựng · Đồ hoạ động",
     thumbnail: "/ytb/studio.jpg",
     assetType: "logo",
+    brandColor: "#7a0e0e",
     description:
       "Kể chuyện thương hiệu dạng dài cho studio — đồ hoạ chuyển động, cắt điện ảnh, thiết kế âm thanh.",
     href: "https://www.youtube.com/@MPickStudio/featured",
@@ -77,6 +81,7 @@ export const ALL_PROJECTS: Project[] = [
     role: "Dựng phim",
     thumbnail: "/ytb/fbshop.jpg",
     assetType: "logo",
+    brandColor: "#c4500c",
     description:
       "Video YouTube cho cửa hàng cầu lông FBShop — giới thiệu vợt, giày, phụ kiện và highlight các giải đấu.",
     href: "https://www.youtube.com/c/fbshopvn",
@@ -106,6 +111,7 @@ export const ALL_PROJECTS: Project[] = [
     role: "Dựng phim",
     thumbnail: "/tiktok/store_fbshop.jpeg",
     assetType: "logo",
+    brandColor: "#c4500c",
     description:
       "TikTok chính thức của cửa hàng cầu lông FBShop — vợt mới về, ưu đãi cửa hàng, mở đầu cuốn, phụ đề động.",
     href: "https://www.tiktok.com/@fbshop.official",
@@ -120,6 +126,7 @@ export const ALL_PROJECTS: Project[] = [
     role: "Dựng phim",
     thumbnail: "/tiktok/fbshop_review.jpeg",
     assetType: "logo",
+    brandColor: "#c4500c",
     description:
       "Chuỗi review vợt cầu lông & phụ kiện dạng ngắn — mở đầu 0–3 giây cuốn, cắt nhanh, phụ đề động.",
     href: "https://www.tiktok.com/@fbshop.vn",
@@ -134,6 +141,7 @@ export const ALL_PROJECTS: Project[] = [
     role: "Dựng · Đồ hoạ động",
     thumbnail: "/tiktok/techone.jpeg",
     assetType: "logo",
+    brandColor: "#1565d4",
     description:
       "TikTok thương hiệu ngành công nghệ: dựng nhanh, chữ chuyển động, đồ hoạ thông tin động.",
     href: "https://www.tiktok.com/@techone.vn",
