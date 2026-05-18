@@ -23,6 +23,21 @@ export type Project = {
 
 export const ALL_PROJECTS: Project[] = [
   {
+    slug: "kim-ngan-phuc",
+    title: "KDJ Kim Ngân Phúc",
+    client: "@kdj.kim.ngan.phuc · Vàng bạc đá quý",
+    platform: "tiktok",
+    engagement: "freelance",
+    year: 2025,
+    role: "Dựng phim",
+    thumbnail: "/tiktok/kimnganphuc.jpeg",
+    assetType: "logo",
+    description:
+      "TikTok thương hiệu vàng bạc đá quý KDJ Kim Ngân Phúc — showcase trang sức cao cấp, story sản phẩm và chuỗi review viral, lượng view top trong các kênh đang hợp tác.",
+    href: "https://www.tiktok.com/@kdj.kim.ngan.phuc",
+    featured: true,
+  },
+  {
     slug: "ngocanh-wedding",
     title: "Ngọc Anh Wedding",
     client: "@ngocanhwedding68",
@@ -80,7 +95,6 @@ export const ALL_PROJECTS: Project[] = [
     description:
       "Video ngắn ngành bất động sản — tham quan dự án, chữ chuyển động, chuyển cảnh năng động.",
     href: "https://www.tiktok.com/@thuongphambds",
-    featured: true,
   },
   {
     slug: "fbshop-official",

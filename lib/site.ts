@@ -22,6 +22,9 @@ export const SITE = {
     "video editor ngành cầu lông",
     "review vợt cầu lông",
     "video editor TikTok cầu lông",
+    "video editor vàng bạc đá quý",
+    "TikTok trang sức",
+    "dựng video tiệm vàng",
   ],
   social: {
     facebook: "https://www.facebook.com/tran.thu.hien.768895",

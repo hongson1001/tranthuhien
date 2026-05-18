@@ -8,6 +8,11 @@ const items = [
     note: "Dựng nội dung TikTok · YouTube · in-store visuals",
   },
   {
+    label: "Kênh nổi bật",
+    value: "KDJ Kim Ngân Phúc — Vàng bạc đá quý",
+    note: "TikTok view top trong các dự án đang hợp tác",
+  },
+  {
     label: "Freelance gần đây",
     value: "Wedding cinematic · Bất động sản · Brand",
     note: "Ngọc Anh Wedding · Thương Phạm BĐS · TechOne · M Pick Studio",
