@@ -5,6 +5,7 @@ const groups = [
     label: "Hậu kỳ",
     items: [
       "Adobe Premiere Pro",
+      "CapCut (TikTok short-form)",
       "Adobe After Effects",
       "DaVinci Resolve",
       "Adobe Audition",

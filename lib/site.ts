@@ -25,6 +25,8 @@ export const SITE = {
     "video editor vàng bạc đá quý",
     "TikTok trang sức",
     "dựng video tiệm vàng",
+    "video editor CapCut",
+    "dựng video TikTok CapCut",
   ],
   social: {
     facebook: "https://www.facebook.com/tran.thu.hien.768895",

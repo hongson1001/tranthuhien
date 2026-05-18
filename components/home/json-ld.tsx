@@ -30,6 +30,7 @@ export function HomeJsonLd() {
       "After Effects",
       "Premiere Pro",
       "DaVinci Resolve",
+      "CapCut",
     ],
     sameAs: Object.values(SITE.social),
   };
