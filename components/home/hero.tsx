@@ -62,7 +62,7 @@ export function Hero() {
               <span className="font-serif italic text-foreground">
                 {SITE.name}
               </span>{" "}
-              — {SITE.role.toLowerCase()}. {SITE.bio}
+              — {SITE.role}. {SITE.bio}
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
