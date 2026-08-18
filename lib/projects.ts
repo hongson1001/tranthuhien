@@ -72,6 +72,22 @@ export const ALL_PROJECTS: Project[] = [
     featured: true,
   },
   {
+    slug: "mastermedia",
+    title: "Master Media",
+    client: "@mastermedia_tt · Bất động sản",
+    platform: "tiktok",
+    engagement: "freelance",
+    year: 2025,
+    role: "Dựng phim",
+    thumbnail: "/tiktok/mastermedia.jpeg",
+    assetType: "logo",
+    brandColor: "#0f3a5f",
+    description:
+      "TikTok bất động sản Master Media — tham quan dự án, điểm nhấn vị trí & tiện ích, chữ chuyển động bám thông tin giá và pháp lý.",
+    href: "https://www.tiktok.com/@mastermedia_tt",
+    featured: true,
+  },
+  {
     slug: "fbshop-youtube",
     title: "FBShop",
     client: "@fbshopvn · Cầu lông",
